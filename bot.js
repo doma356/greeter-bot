@@ -7,14 +7,20 @@ client.on('ready', () => {
 
 client.on('message', message => {
       var text = message.content;
-      symbol = text[0];
-      var msg = 'nani!?!?!';
+      var symbol = text[0];
+      msg = 'nani!?!?';
 
-      switch(symbol){
-        case '!':
-          //text = message.content.substring(1)
-          msg = 'gugugug';
-        break;
+      if(symbol == '!'){
+        var dalys = message.substring(1).split(' ');
+        var veiksmas = dalys[0];
+
+        if(veiksmas == 'pam'){
+          var vardas = dalys[1];
+
+          if(vardas == 'doma'){
+            msg = 'domos tvarkarastis';
+          }
+        }
       }
 
       message.reply(msg);
