@@ -6,8 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!pam doma') {
-    	message.reply('http://ziezmariai.lm.lt/~detach/v2/images/file/UGDYMAS/tvarkarasciai/2018/x30014ga_add.htm');
+    if (message.content === '!pam') {
+    	message.reply(message.content[0]);
+      message.reply(message.substring(0, 1));
+      message.reply(message.substring(0, 2));
   	}
 });
 
