@@ -11,8 +11,6 @@ client.on('message', message => {
   var cmd = args[0];
   var vardas = args[1];
 
-//  logger.info(vardas);
-
   args = args.splice(1);
   switch(cmd) {
       // !ping
@@ -25,12 +23,9 @@ client.on('message', message => {
             msg = 'http://ziezmariai.lm.lt/~detach/v2/images/file/UGDYMAS/tvarkarasciai/2018/II/x30014ga_neg.htm';
           }
           else{
-            msg = 'nani!?';
+            msg = 'nani!?!?';
           }
-          bot.sendMessage({
-              to: channelID,
-              message: msg
-          });
+          message.reply(msg);
       break;
       // Just add any case commands if you want to..
    }
