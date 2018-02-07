@@ -8,7 +8,8 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === '!pam') {
       var text = message.content;
-      message.reply(text);
+      var c = text[1];
+      message.reply(c);
   	}
 });
 
