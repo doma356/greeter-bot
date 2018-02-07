@@ -7,12 +7,12 @@ client.on('ready', () => {
 
 client.on('message', message => {
       var text = message.content;
-      
-    if (text === '!') {
+
+    if (text[0] === '!') {
       var text = '';
       var symbol = '';
       var msg = 'nani!?!?!?!?';
-      
+
       message.reply(msg);
   	}
 });
