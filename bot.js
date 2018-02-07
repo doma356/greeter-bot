@@ -6,9 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.substring(0, 1) === '!') {
-    message.reply('ka yra?');
-  }
+    message.reply(message);
 });
 
 // THIS  MUST  BE  THIS  WAY
