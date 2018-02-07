@@ -6,10 +6,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!pam') {
       var text = message.content;
-      var c = text[1];
-      message.reply(c);
+      
+    if (text === '!') {
+      var text = '';
+      var symbol = '';
+      var msg = 'nani!?!?!?!?';
+      
+      message.reply(msg);
   	}
 });
 
