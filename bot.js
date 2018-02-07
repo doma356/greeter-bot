@@ -7,6 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!pam') {
+      message.reply("ka tu nori!?");
     	message.reply(message.content[0]);
       message.reply(message.substring(0, 1));
       message.reply(message.substring(0, 2));
